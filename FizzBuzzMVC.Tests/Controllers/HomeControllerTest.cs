@@ -17,7 +17,7 @@ namespace FizzBuzzMVC.Tests.Controllers
         {
             FizzBuzzController controller = new FizzBuzzController();
             ViewResult result = controller.Index(1) as ViewResult;
-            string expected = "1";
+            string expected = "1 ";
             string actual = result.ViewBag.Output;
             Assert.AreEqual(expected, actual);
         }
